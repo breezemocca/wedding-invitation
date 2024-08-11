@@ -57,7 +57,7 @@ export default function Home() {
         />
         <meta
           property="og:url"
-          content="https://breezemocca.github.io"
+          content="https://h1mocca.site"
         />
         <meta name="theme-color" content="#BCAAA4" />
         <title>심명훈❤장혜원 결혼식에 초대합니다</title>
