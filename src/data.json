@@ -1,17 +1,17 @@
 {
-  "date": "2024년 12월 23일, 일요일 오전 11시 00분",
+  "date": "2024년 12월 22일, 일요일 오전 11시 00분",
   "location": "서울웨딩타워",
-  "gretting": "서로 마주 보며 다져온 사랑을\n이제 함께 한곳을 바라보며 걸어갈 수 있는\n큰 사랑으로 키우고자 합니다.\n저희 두 사람이 사랑의 이름으로 지켜나갈 수 있게\n앞날을 축복해 주시면 감사하겠습니다.",
+  "gretting": "나의 행복이 너의 행복이라면\n내가 더 행복해져 볼게\n잘해.\n- '장혜원' 어록집 中 -",
   "groom": {
     "name": "심명훈",
-    "account_number": "○○은행 ***-***-******",
+    "account_number": "기업은행 389-077862-01-016",
     "parents": {
       "mother": {
-        "name": "○○○",
+        "name": "조재연",
         "account_number": "○○은행 ***-***-******"
       },
       "father": {
-        "name": "○○○",
+        "name": "심문보",
         "account_number": "○○은행 ***-***-******"
       }
     }
@@ -32,7 +32,7 @@
   },
   "kakaotalk": {
     "api_token": "",
-    "wedding_invitation_url": "",
+    "wedding_invitation_url": "https://h1mocca.site",
     "share_image": ""
   }
 }

@@ -60,7 +60,7 @@ export default function Home() {
           content="https://breezemocca.github.io"
         />
         <meta name="theme-color" content="#BCAAA4" />
-        <title>○○○❤○○○ 결혼식에 초대합니다</title>
+        <title>심명훈❤장혜원 결혼식에 초대합니다</title>
       </Head>
       <main className={`${notoSansKR.className}`}>
         <Script src="https://developers.kakao.com/sdk/js/kakao.min.js"></Script>
@@ -70,7 +70,7 @@ export default function Home() {
         <Location />
         <CongratulatoryMoney data={JsonData} />
         <Share data={JsonData} />
-        <Footer>Copyright © 2021 KyuHyuk Lee</Footer>
+        <Footer>Copyright © 2024 Mocca</Footer>
       </main>
     </>
   );
