@@ -23,7 +23,7 @@ const TitleWrapper = styled("div", {
   "-o-animation": "fadein 3s" /* Opera */,
 });
 
-const VideoBackground = styled("video", {
+const ImageBackground = styled("img", {
   backgroundColor: "#aeb8b3 !important",
   opacity: 0.9,
   objectFit: "cover",
@@ -58,21 +58,19 @@ type TitleProps = {
 
 export default function Title({ data }: TitleProps) {
   return (
-    <Layout>
-      <VideoBackground autoPlay loop muted playsInline={true}>
-        <source src="./assets/BackgroundVideo.mp4" type="video/mp4" />
-      </VideoBackground>
-      <TitleWrapper>
-        <WeddingInvitation>WEDDING INVITATION</WeddingInvitation>
-        <GroomBride>
-          {data?.groom?.name} &#38; {data?.bride?.name}
-        </GroomBride>
-        <Schedule>
-          {data?.date}
-          <br />
-          {data?.location}
-        </Schedule>
-      </TitleWrapper>
-    </Layout>
+      <Layout>
+        <ImageBackground src="./assets/BackgroundImage.jpg" alt="Wedding Background" />
+        <TitleWrapper>
+          <WeddingInvitation>WEDDING INVITATION</WeddingInvitation>
+          <GroomBride>
+            {data?.groom?.name} & {data?.bride?.name}
+          </GroomBride>
+          <Schedule>
+            {data?.date}
+            <br />
+            {data?.location}
+          </Schedule>
+        </TitleWrapper>
+      </Layout>
   );
 }
