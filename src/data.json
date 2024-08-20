@@ -8,30 +8,30 @@
     "parents": {
       "mother": {
         "name": "조재연",
-        "account_number": "○○은행 ***-***-******"
+        "account_number": "기업은행 389-077862-01-016"
       },
       "father": {
         "name": "심문보",
-        "account_number": "○○은행 ***-***-******"
+        "account_number": "기업은행 389-077862-01-016"
       }
     }
   },
   "bride": {
     "name": "장혜원",
-    "account_number": "○○은행 ***-***-******",
+    "account_number": "기업은행 389-077862-01-016",
     "parents": {
       "mother": {
         "name": "김점숙",
-        "account_number": "○○은행 ***-***-******"
+        "account_number": "기업은행 389-077862-01-016"
       },
       "father": {
         "name": "장선규",
-        "account_number": "○○은행 ***-***-******"
+        "account_number": "기업은행 389-077862-01-016"
       }
     }
   },
   "kakaotalk": {
-    "api_token": "",
+    "api_token": "31114be367ef0df0fbf8ca52894f72b6",
     "wedding_invitation_url": "https://h1mocca.site",
     "share_image": ""
   }
