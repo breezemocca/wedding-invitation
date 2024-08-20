@@ -16,44 +16,26 @@ const Title = styled("p", {
   marginBottom: 0,
 });
 
-const images = [
-  {
-    original: "./assets/Gallery_Photo_1.png",
-    thumbnail: "./assets/Gallery_Photo_1.png",
-  },
-  {
-    original: "./assets/Gallery_Photo_2.png",
-    thumbnail: "./assets/Gallery_Photo_2.png",
-  },
-  {
-    original: "./assets/Gallery_Photo_3.png",
-    thumbnail: "./assets/Gallery_Photo_3.png",
-  },
-  {
-    original: "./assets/Gallery_Photo_4.png",
-    thumbnail: "./assets/Gallery_Photo_4.png",
-  },
-  {
-    original: "./assets/Gallery_Photo_5.png",
-    thumbnail: "./assets/Gallery_Photo_5.png",
-  },
-  {
-    original: "./assets/Gallery_Photo_6.png",
-    thumbnail: "./assets/Gallery_Photo_6.png",
-  },
-];
+const images = Array.from({ length: 28 }, (_, i) => {
+  const index = i + 1; // index starts from 1
+  const fileName = `Gallery_Photo_${index}.jpg`;
+  return {
+    original: `./assets/${fileName}`,
+    thumbnail: `./assets/${fileName}`,
+  };
+});
 
 export default function Gallery() {
   return (
-    <Wrapper>
-      <Divider plain style={{ marginTop: 0, marginBottom: 32 }}>
-        <Title>우리의 아름다운 순간</Title>
-      </Divider>
-      <ImageGallery
-        showPlayButton={false}
-        showFullscreenButton={false}
-        items={images}
-      />
-    </Wrapper>
+      <Wrapper>
+        <Divider plain style={{ marginTop: 0, marginBottom: 32 }}>
+          <Title>우리의 아름다운 순간</Title>
+        </Divider>
+        <ImageGallery
+            showPlayButton={false}
+            showFullscreenButton={false}
+            items={images}
+        />
+      </Wrapper>
   );
 }
