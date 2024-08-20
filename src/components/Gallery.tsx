@@ -21,7 +21,7 @@ const images = Array.from({ length: 28 }, (_, i) => {
   const fileName = `Gallery_Photo_${index}.jpg`;
   return {
     original: `./assets/${fileName}`,
-    thumbnail: `./assets/${fileName}`,
+    thumbnail: `./assets/thumnail/${fileName}`,
   };
 });
 
