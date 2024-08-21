@@ -152,11 +152,16 @@ const Navigation = () => {
             </ListItem>
             <ListItem>
                 <Paragraph>
-                    가랑시장 지하주차장(2000대)
+                    가락시장 지하주차장(2000대)
+                </Paragraph>
+                <Paragraph>
+                    <Link href="https://blog.naver.com/swtower7/220832517674" target="_blank" rel="noopener noreferrer">
+                       - 가락시장 동문주차장 입구 안내
+                    </Link>
                 </Paragraph>
                 <Paragraph>
                     <Link href="https://blog.naver.com/swtower7/220832543932" target="_blank" rel="noopener noreferrer">
-                        찾아오는 방법(서울웨딩타워 블로그)
+                       - 가락시장 남문1주차장 입구 안내
                     </Link>
                 </Paragraph>
             </ListItem>
