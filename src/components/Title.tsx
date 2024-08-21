@@ -1,5 +1,6 @@
 import { styled } from "@stitches/react";
 import { Divider } from "antd";
+import {white} from "next/dist/lib/picocolors";
 
 const Layout = styled("div", {
   width: "100%",
@@ -12,11 +13,12 @@ const Layout = styled("div", {
 const TitleWrapper = styled("div", {
   position: "absolute",
   width: "100%",
-  top: "20%",
+  top: "10%",
   left: "50%",
   transform: "translate(-50%, -50%)",
   textAlign: "center",
-  textShadow: "-1px 0 #9e9e9e, 0 1px #9e9e9e, 1px 0 #9e9e9e, 0 -1px #9e9e9e",
+  color: "white",
+  //textShadow: "-1px 0 #9e9e9e, 0 1px #9e9e9e, 1px 0 #9e9e9e, 0 -1px #9e9e9e",
   animation: "fadein 3s",
   "-moz-animation": "fadein 3s" /* Firefox */,
   "-webkit-animation": "fadein 3s" /* Safari and Chrome */,
@@ -41,8 +43,7 @@ const WeddingInvitation = styled("p", {
 
 const GroomBride = styled("p", {
   fontSize: "3.5vh",
-  fontWeight: "bold",
-  opacity: 0.9,
+  opacity: 0.8,
   marginBottom: 16,
 });
 
@@ -63,13 +64,13 @@ export default function Title({ data }: TitleProps) {
         <TitleWrapper>
           <WeddingInvitation>WEDDING INVITATION</WeddingInvitation>
           <GroomBride>
-            {data?.groom?.name} & {data?.bride?.name}
+            {data?.groom?.name} ❤️ {data?.bride?.name}
           </GroomBride>
-          <Schedule>
-            {data?.date}
-            <br />
-            {data?.location}
-          </Schedule>
+          {/*<Schedule>*/}
+          {/*  {data?.date}*/}
+          {/*  <br />*/}
+          {/*  {data?.location}*/}
+          {/*</Schedule>*/}
         </TitleWrapper>
       </Layout>
   );

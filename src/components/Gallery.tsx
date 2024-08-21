@@ -28,7 +28,7 @@ const images = Array.from({ length: 28 }, (_, i) => {
 export default function Gallery() {
   return (
       <Wrapper>
-        <Divider plain style={{ marginTop: 100, marginBottom: 32 }}>
+        <Divider plain style={{ paddingTop: 100, marginBottom: 32 }}>
           <Title>Gallery</Title>
         </Divider>
         <ImageGallery
