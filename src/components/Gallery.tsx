@@ -4,7 +4,7 @@ import { styled } from "@stitches/react";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 const Wrapper = styled("div", {
-  background: "#efebe9",
+  //background: "#efebe9",
   backgroundImage: "url(./assets/GroovePaper.png)",
   width: "100%",
 });
@@ -28,8 +28,8 @@ const images = Array.from({ length: 28 }, (_, i) => {
 export default function Gallery() {
   return (
       <Wrapper>
-        <Divider plain style={{ marginTop: 0, marginBottom: 32 }}>
-          <Title>우리의 아름다운 순간</Title>
+        <Divider plain style={{ marginTop: 100, marginBottom: 32 }}>
+          <Title>Gallery</Title>
         </Divider>
         <ImageGallery
             showPlayButton={false}

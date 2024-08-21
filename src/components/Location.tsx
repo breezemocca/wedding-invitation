@@ -77,7 +77,7 @@ const Navigation = () => {
     return (
         <Container>
             <Wrapper>
-                <Divider plain style={{ marginTop: 50, marginBottom: 32 }}>
+                <Divider plain style={{ marginTop: 100, marginBottom: 32 }}>
                     <Title>오시는 길</Title>
                 </Divider>
             </Wrapper>
