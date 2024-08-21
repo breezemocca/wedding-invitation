@@ -4,10 +4,6 @@ import { Divider, Button } from "antd";
 import { EnvironmentOutlined, CarOutlined } from '@ant-design/icons';
 
 const Wrapper = styled.div`
-    background: "#efebe9";
-    backgroundImage: "url(./assets/GroovePaper.png)";
-    width: "100%";
-    paddingBottom: 42;
     textAlign: "center";
 `;
 
@@ -143,11 +139,11 @@ const Navigation = () => {
             <Subtitle>자가용</Subtitle>
             <ListItem>
                 <Dot color="black" />
-                네비게이션 : “서울웨딩타워" 검색
+                네비게이션 : <b>서울웨딩타워</b> 검색
             </ListItem>
             <ListItem>
                 <Paragraph>
-                    주소검색 “서울특별시 송파구 가락동 600” 입력
+                    주소검색 <b>서울특별시 송파구 가락동 600</b> 입력
                 </Paragraph>
             </ListItem>
             <ListItem>
