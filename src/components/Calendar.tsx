@@ -56,6 +56,7 @@ const StyledCalendar = styled(Calendar)`
   .react-calendar__month-view__days__day {
     text-align: center;
     font-size: 16px;
+    color: black;
   }
 `;
 
