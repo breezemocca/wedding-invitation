@@ -79,7 +79,7 @@ export default function Gallery() {
                 ))}
             </ThumbnailsGrid>
             {!showAllImages && (
-                <Button type="primary" onClick={handleShowMore} style={{ display: "block", margin: "0 auto", backgroundColor:"white", color:"black", width:200, height:40, marginTop:30 }}>
+                <Button type="primary" onClick={handleShowMore} style={{ display: "block", margin: "0 auto", backgroundColor:"white", color:"black", width:200, height:40, marginTop:30, marginBottom:100 }}>
                     더 보기
                 </Button>
             )}

@@ -34,5 +34,13 @@
     "api_token": "31114be367ef0df0fbf8ca52894f72b6",
     "wedding_invitation_url": "https://h1mocca.site",
     "share_image": ""
+  },
+  "mapInfo": {
+    "address1": "서울웨딩타워",
+    "address2": "서울특별시 송파구 가락동 600\n02-463-5000",
+    "naverMap": "https://map.naver.com/p/directions/-/14150419.3847254,4508341.2196304,%EC%84%9C%EC%9A%B8%EC%9B%A8%EB%94%A9%ED%83%80%EC%9B%8C,38403565,PLACE_POI/-/transit?c=12.00,0,0,2,dh",
+    "kakaoMap": "https://map.kakao.com/?map_type=TYPE_MAP&target=car&rt=,,525560,1109910&rt1=&rt2=%EC%84%9C%EC%9A%B8%EC%9B%A8%EB%94%A9%ED%83%80%EC%9B%8C&rtIds=,1252201089",
+    "lat": 37.4950338,
+    "lon": 127.1157311
   }
 }

@@ -35,4 +35,12 @@ type Data = {
     wedding_invitation_url: string;
     share_image: string;
   };
+  "mapInfo": {
+    "address1": string;
+    "address2": string;
+    "naverMap": string;
+    "kakaoMap": string;
+    "lat": number;
+    "lon": number;
+  };
 };

@@ -10,6 +10,8 @@ const Title = dynamic(() => import("@/components/Title"), { ssr: false });
 const Gretting = dynamic(() => import("@/components/Gretting"), { ssr: false });
 const Calendar = dynamic(() => import("@/components/Calendar"), { ssr: false });
 const Gallery = dynamic(() => import("@/components/Gallery"), { ssr: false });
+const Map = dynamic(() => import("@/components/Map"), { ssr: false });
+const MapButtons = dynamic(() => import("@/components/MapButtons"), { ssr: false });
 const Location = dynamic(() => import("@/components/Location"), { ssr: false });
 const CongratulatoryMoney = dynamic(
   () => import("@/components/CongratulatoryMoney"),
@@ -65,6 +67,7 @@ export default function Home() {
         <style>
           @import url(&quot;https://fonts.googleapis.com/css2?family=Gowun+Dodum&amp;display=swap&quot;);
         </style>
+        <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=b61w4jr79b" async />
       </Head>
 
       <main className={`${notoSansKR.className}`}>
@@ -73,6 +76,8 @@ export default function Home() {
         <Gretting data={JsonData} />
         <Calendar />
         <Gallery />
+        <Map data={JsonData} />
+        <MapButtons data={JsonData} />
         <Location />
         <CongratulatoryMoney data={JsonData} />
         <Share data={JsonData} />

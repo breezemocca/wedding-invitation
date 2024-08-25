@@ -74,10 +74,8 @@ const Navigation = () => {
     return (
         <Container>
             <Wrapper>
-                <Divider plain style={{ marginTop: 0, marginBottom: 32 }}>
-                    <Title style={{ fontSize:50 }}> 💒 </Title>
-                </Divider>
             </Wrapper>
+{/*
             <Title>내비게이션</Title>
             <Paragraph>원하시는 앱을 선택하시면 길안내가 시작됩니다.</Paragraph>
             <ButtonContainer>
@@ -94,6 +92,7 @@ const Navigation = () => {
                     <IconText>카카오내비</IconText>
                 </ButtonStyled>
             </ButtonContainer>
+*/}
 
             <Divider />
 
