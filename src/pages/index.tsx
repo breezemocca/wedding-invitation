@@ -63,7 +63,7 @@ export default function Home() {
         <meta name="theme-color" content="#BCAAA4" />
         <title>심명훈❤장혜원 결혼식에 초대합니다</title>
         <style>
-          @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+          @import url(&quot;https://fonts.googleapis.com/css2?family=Gowun+Dodum&amp;display=swap&quot;);
         </style>
       </Head>
 
