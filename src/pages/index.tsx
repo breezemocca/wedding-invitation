@@ -63,6 +63,9 @@ export default function Home() {
         <meta name="theme-color" content="#BCAAA4" />
         <title>심명훈❤장혜원 결혼식에 초대합니다</title>
       </Head>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+      </style>
       <main className={`${notoSansKR.className}`}>
         <Script src="https://developers.kakao.com/sdk/js/kakao.min.js"></Script>
         <Title data={JsonData} />
