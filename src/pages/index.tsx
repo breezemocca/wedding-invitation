@@ -47,14 +47,14 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta content="심명훈❤장혜원 결혼식에 초대합니다" name="Title" />
         <meta
-          content="2024년 12월 22일 일요일 오전 11시 00분"
+          content="2024년 12월 22일 일요일 오전 11시"
           name="Description"
         />
-        <meta content="2024년 12월 22일 일요일 오전 11시 00분" name="Keyword" />
+        <meta content="2024년 12월 22일 일요일 오전 11시" name="Keyword" />
         <meta property="og:title" content="심명훈❤장혜원 결혼식에 초대합니다" />
         <meta
           property="og:description"
-          content="2024년 12월 22일 일요일 오전 11시 00분"
+          content="2024년 12월 22일 일요일 오전 11시"
         />
         <meta
           property="og:url"
@@ -62,10 +62,11 @@ export default function Home() {
         />
         <meta name="theme-color" content="#BCAAA4" />
         <title>심명훈❤장혜원 결혼식에 초대합니다</title>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+        </style>
       </Head>
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
-      </style>
+
       <main className={`${notoSansKR.className}`}>
         <Script src="https://developers.kakao.com/sdk/js/kakao.min.js"></Script>
         <Title data={JsonData} />

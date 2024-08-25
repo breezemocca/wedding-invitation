@@ -3,8 +3,9 @@ import { Divider } from "antd";
 import {white} from "next/dist/lib/picocolors";
 
 const Layout = styled("div", {
-  width: "100%",
-  height: "100vh",
+  //width: "100%",
+  //height: "100vh",
+  height: "100%",
   overflow: "hidden",
   margin: "0px auto",
   position: "relative",
@@ -35,20 +36,14 @@ const ImageBackground = styled("img", {
   minHeight: 480,
 });
 
-const WeddingInvitation = styled("p", {
-  fontSize: "1.5vh",
-  opacity: 0.45,
-  marginBottom: 16,
-});
-
 const GroomBride = styled("p", {
-  fontSize: "3.5vh",
+  fontSize: 20,
   opacity: 0.8,
   marginBottom: 16,
 });
 
 const Schedule = styled("p", {
-  fontSize: "2vh",
+  fontSize: 18,
   opacity: 0.65,
   marginBottom: 24,
 });
@@ -62,15 +57,14 @@ export default function Title({ data }: TitleProps) {
       <Layout>
         <ImageBackground src="./assets/BackgroundImage.jpg" alt="Wedding Background" />
         <TitleWrapper>
-          <WeddingInvitation>WEDDING INVITATION</WeddingInvitation>
           <GroomBride>
-            {data?.groom?.name} ❤️ {data?.bride?.name}
+            {data?.groom?.name} 🍀 {data?.bride?.name}
           </GroomBride>
-          {/*<Schedule>*/}
-          {/*  {data?.date}*/}
-          {/*  <br />*/}
-          {/*  {data?.location}*/}
-          {/*</Schedule>*/}
+          <Schedule>
+            {data?.date}
+            <br />
+            {data?.location}
+          </Schedule>
         </TitleWrapper>
       </Layout>
   );

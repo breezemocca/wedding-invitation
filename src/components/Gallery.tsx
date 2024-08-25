@@ -15,17 +15,25 @@ const Title = styled("p", {
     textAlign: "center",
 });
 
+const Content = styled("div", {
+    fontSize: 20,
+    lineHeight: 1.75,
+    opacity: 0.75,
+    width: "100%",
+    textAlign: "center",
+});
+
 const ThumbnailsGrid = styled("div", {
     display: "grid",
     gridTemplateColumns: "repeat(3, 1fr)",
-    gap: "8px",
+    gap: "1px",
     marginBottom: "16px",
 });
 
 const ThumbnailImage = styled("img", {
     width: "100%",
     cursor: "pointer",
-    borderRadius: "4px",
+    borderRadius: "0px",
 });
 
 const images = Array.from({ length: 28 }, (_, i) => {
@@ -56,8 +64,11 @@ export default function Gallery() {
     return (
         <Wrapper>
             <Divider plain style={{ paddingTop: 100, marginBottom: 32 }}>
-                <Title>Gallery</Title>
+                <Title style={{ fontSize:50 }}>📸</Title>
             </Divider>
+            <Content style={{ paddingTop: 30, marginBottom: 32 }}>
+                제주도, 가파도, <br />그리고 프랑스 파리까지.
+            </Content>
             <ThumbnailsGrid>
                 {images.slice(0, showAllImages ? images.length : 9).map((image, index) => (
                     <ThumbnailImage

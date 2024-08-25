@@ -8,6 +8,7 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
+  background-image: url('/assets/GroovePaper.png');
   padding: 16px;
   max-width: 600px;
   margin: 0 auto;
@@ -74,7 +75,7 @@ const Navigation = () => {
         <Container>
             <Wrapper>
                 <Divider plain style={{ marginTop: 100, marginBottom: 32 }}>
-                    <Title>오시는 길</Title>
+                    <Title style={{ fontSize:50 }}> 💒 </Title>
                 </Divider>
             </Wrapper>
             <Title>내비게이션</Title>

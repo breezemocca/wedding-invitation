@@ -10,13 +10,12 @@ const Wrapper = styled.div`
   //background: #fdfdfd;
   border-radius: 10px;
   padding: 40px 20px;
-  max-width: 420px;
+  //max-width: 420px;
   margin: 0 auto;
   text-align: center;
   //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
-  backgroundImage: "url(./assets/GroovePaper.png)";
-
+  background-image: url('/assets/GroovePaper.png');
 `;
 
 const Title = styled.h2`
@@ -35,6 +34,7 @@ const StyledCalendar = styled(Calendar)`
   margin: 20px auto;
   border: none;
   width: 100%;
+  background-image: url('/assets/GroovePaper.png');
 
   .react-calendar__tile--now {
     background: transparent;
@@ -86,10 +86,6 @@ export default function WeddingCalendar({ data }: CalendarProps) {
     }, []);
 
     const daysRemaining = differenceInDays(weddingDate, currentDate);
-    const hoursRemaining = differenceInHours(weddingDate, currentDate) % 24;
-    const minutesRemaining = differenceInMinutes(weddingDate, currentDate) % 60;
-    const secondsRemaining = differenceInSeconds(weddingDate, currentDate) % 60;
-
     const formattedDate = format(weddingDate, "yyyy.MM.dd", { locale: ko });
     const formattedTime = format(weddingDate, "EEEE 오전 hh시", { locale: ko });
 
@@ -98,7 +94,6 @@ export default function WeddingCalendar({ data }: CalendarProps) {
             <Title style={{ paddingTop: 100 }}>{formattedDate}</Title>
             <SubTitle>{formattedTime}</SubTitle>
             <StyledCalendar
-                //locale="ko-KR" // 한글 로케일 적용
                 locale="en-US"
                 value={weddingDate}
                 showNeighboringMonth={false} // 다음 달 날짜 숨기기

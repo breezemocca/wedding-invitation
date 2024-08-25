@@ -5,7 +5,7 @@ import { useState } from "react";
 import CopyToClipboard from "react-copy-to-clipboard";
 
 const Wrapper = styled("div", {
-  background: "#efebe9",
+  //background: "#efebe9",
   backgroundImage: "url(./assets/GroovePaper.png)",
   paddingBottom: 18,
   width: "100%",
@@ -13,28 +13,28 @@ const Wrapper = styled("div", {
 });
 
 const Title = styled("p", {
-  fontSize: "2vh",
+  fontSize: 20,
   fontWeight: "bold",
   opacity: 0.85,
   marginBottom: 0,
 });
 
 const Content = styled("p", {
-  fontSize: "1.5vh",
+  fontSize: 16,
   lineHeight: 1.75,
   opacity: 0.75,
   marginBottom: 24,
 });
 
 const SubContent = styled("p", {
-  fontSize: "1.3vh",
+  fontSize: 14,
   lineHeight: 1.75,
   opacity: 0.75,
   marginBottom: 24,
 });
 
 const Description = styled("p", {
-  fontSize: "1.3vh",
+  fontSize: 12,
   lineHeight: 1.75,
   opacity: 0.65,
   marginTop: 8,
