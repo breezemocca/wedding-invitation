@@ -8,6 +8,7 @@ import Script from "next/script";
 
 const Title = dynamic(() => import("@/components/Title"), { ssr: false });
 const Gretting = dynamic(() => import("@/components/Gretting"), { ssr: false });
+const Calendar = dynamic(() => import("@/components/Calendar"), { ssr: false });
 const Gallery = dynamic(() => import("@/components/Gallery"), { ssr: false });
 const Location = dynamic(() => import("@/components/Location"), { ssr: false });
 const CongratulatoryMoney = dynamic(
@@ -66,6 +67,7 @@ export default function Home() {
         <Script src="https://developers.kakao.com/sdk/js/kakao.min.js"></Script>
         <Title data={JsonData} />
         <Gretting data={JsonData} />
+        <Calendar />
         <Gallery />
         <Location />
         <CongratulatoryMoney data={JsonData} />
