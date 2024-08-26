@@ -22,13 +22,22 @@ const Container = styled.div`
 const Title = styled.h2`
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 16px;
+  opacity: 0.85;
+  text-align: center;
 `;
 
 const Subtitle = styled.h3`
   font-size: 16px;
   font-weight: bold;
   margin: 24px 0 12px 0;
+`;
+
+const Content = styled.div`
+  font-size: 18px;
+  line-height: 1.75;
+  opacity: 0.75;
+  width: 100%;
+  text-align: center;
 `;
 
 const Paragraph = styled.p`
@@ -78,10 +87,16 @@ const Navigation = () => {
     return (
         <Container>
             <Wrapper>
-                <Divider style={{ paddingTop: 100, marginTop: 0, marginBottom: 32 }} plain>
-                    <Title style={{ fontSize:50 }}>‍👰🏻‍💒🤵🏽</Title>
+                <Divider style={{ paddingTop: 0, marginTop: 0, marginBottom: 32 }} plain>
+                    <Title style={{ fontSize:50 }}>‍🗺️</Title>
                 </Divider>
             </Wrapper>
+            <Title>
+                서울웨딩타워
+            </Title>
+            <Content style={{paddingBottom:30}}>
+                서울송파구 양재대로 932 가락몰 SAFF타워 2F
+            </Content>
             <Map />
             <MapButtons data={JsonData} />
             <Divider />
@@ -121,8 +136,6 @@ const Navigation = () => {
                     <Dot color="lightblue" /> 공항 : 6300
                 </Paragraph>
             </ListItem>
-
-            <Paragraph>하차 후 가락시장 방면으로 횡단보도 이용후 우측방향</Paragraph>
 
             <Divider />
 

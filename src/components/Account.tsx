@@ -18,7 +18,7 @@ const Content = styled.div`
 `;
 
 const Title = styled.p`
-  font-size: 20px;
+  font-size: 50px;
   fontWeight: "bold";
   opacity: 0.85;
   marginBottom: 0;

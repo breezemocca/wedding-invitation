@@ -8,11 +8,9 @@ const Wrapper = styled("div", {
 });
 
 const Title = styled("p", {
-    fontSize: "2vh",
+    fontSize: 20,
     fontWeight: "bold",
     opacity: 0.85,
-    marginBottom: 0,
-    textAlign: "center",
 });
 
 const Content = styled("div", {

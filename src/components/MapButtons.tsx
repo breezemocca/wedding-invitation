@@ -14,7 +14,7 @@ const Container = styled.div`
 const Paragraph = styled.p`
   font-size: 14px;
   margin-bottom: 8px;
-  textAlign: "center";
+  text-align: center;
 `;
 
 type MapButtonsProps = {
