@@ -2,34 +2,84 @@
   "date": "2024년 12월 22일 일요일 오전 11시",
   "location": "서울웨딩타워",
   "gretting": "나의 행복이 너의 행복이라면\n내가 더 행복해져 볼게\n잘해.\n- '장혜원' 어록집 中 -",
-  "groom": {
-    "name": "심명훈",
-    "account_number": "기업은행 389-077862-01-016",
-    "parents": {
-      "mother": {
-        "name": "조재연",
-        "account_number": "기업은행 389-077862-01-016"
-      },
-      "father": {
-        "name": "심문보",
-        "account_number": "기업은행 389-077862-01-016"
+  "host": {
+    "groom": {
+      "name": "심명훈",
+      "account_number": "기업은행 389-077862-01-016",
+      "parents": {
+        "mother": {
+          "name": "조재연",
+          "account_number": "기업은행 389-077862-01-016"
+        },
+        "father": {
+          "name": "심문보",
+          "account_number": "기업은행 389-077862-01-016"
+        }
+      }
+    },
+    "bride": {
+      "name": "장혜원",
+      "account_number": "기업은행 389-077862-01-016",
+      "parents": {
+        "mother": {
+          "name": "김점숙",
+          "account_number": "기업은행 389-077862-01-016"
+        },
+        "father": {
+          "name": "장선규",
+          "account_number": "기업은행 389-077862-01-016"
+        }
       }
     }
   },
-  "bride": {
-    "name": "장혜원",
-    "account_number": "기업은행 389-077862-01-016",
-    "parents": {
-      "mother": {
-        "name": "김점숙",
-        "account_number": "기업은행 389-077862-01-016"
-      },
-      "father": {
-        "name": "장선규",
-        "account_number": "기업은행 389-077862-01-016"
-      }
+  "hostInfo": [
+    {
+      "host": "신랑측",
+      "accountInfo": [
+        {
+          "name": "심명훈",
+          "relation": "신랑",
+          "bank": "기업은행",
+          "account": "389-077862-01-016"
+        },
+        {
+          "name": "심문보",
+          "relation": "아버지",
+          "bank": "새마을금고",
+          "account": "9003-2105-53825"
+        },
+        {
+          "name": "조재연",
+          "relation": "어머니",
+          "bank": "농협",
+          "account": "835-1212-8398"
+        }
+      ]
+    },
+    {
+      "host": "신부측",
+      "accountInfo": [
+        {
+          "name": "장혜원",
+          "relation": "신부",
+          "bank": "국민은행",
+          "account": "60640204106456"
+        },
+        {
+          "name": "장선규",
+          "relation": "아버지",
+          "bank": "신한은행",
+          "account": "110-461-458065"
+        },
+        {
+          "name": "김점숙",
+          "relation": "어머니",
+          "bank": "신한은행",
+          "account": "948-04-372397"
+        }
+      ]
     }
-  },
+  ],
   "kakaotalk": {
     "api_token": "31114be367ef0df0fbf8ca52894f72b6",
     "wedding_invitation_url": "https://h1mocca.site",

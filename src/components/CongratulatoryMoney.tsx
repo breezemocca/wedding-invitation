@@ -89,49 +89,49 @@ export default function CongratulatoryMoney({
         okButtonProps={{ style: { display: "none" } }}
         footer={null}
       >
-        {data?.groom?.parents?.father && (
+        {data?.host?.groom?.parents?.father && (
           <div>
-            <b>부) {data?.groom?.parents?.father?.name}</b>
+            <b>부) {data?.host?.groom?.parents?.father?.name}</b>
             <Divider type="vertical" />
             <CopyToClipboard
-              text={data?.groom?.parents?.father?.account_number}
+              text={data?.host?.groom?.parents?.father?.account_number}
             >
               <Button
                 type="text"
                 style={{ padding: 0, margin: 0 }}
                 onClick={() => message.success("계좌번호가 복사되었습니다.")}
               >
-                {data?.groom?.parents?.father?.account_number}
+                {data?.host?.groom?.parents?.father?.account_number}
               </Button>
             </CopyToClipboard>
           </div>
         )}
-        {data?.groom?.parents?.mother && (
+        {data?.host?.groom?.parents?.mother && (
           <div style={{ marginTop: 24, marginBottom: 24 }}>
-            <b>모) {data?.groom?.parents?.mother.name}</b>
+            <b>모) {data?.host?.groom?.parents?.mother.name}</b>
             <Divider type="vertical" />
-            <CopyToClipboard text={data?.groom?.parents?.mother.account_number}>
+            <CopyToClipboard text={data?.host?.groom?.parents?.mother.account_number}>
               <Button
                 type="text"
                 style={{ padding: 0, margin: 0 }}
                 onClick={() => message.success("계좌번호가 복사되었습니다.")}
               >
-                {data?.groom?.parents?.mother.account_number}
+                {data?.host?.groom?.parents?.mother.account_number}
               </Button>
             </CopyToClipboard>
           </div>
         )}
-        {data?.groom && (
+        {data?.host?.groom && (
           <div>
-            <b>신랑 {data?.groom?.name}</b>
+            <b>신랑 {data?.host?.groom?.name}</b>
             <Divider type="vertical" />
-            <CopyToClipboard text={data?.groom?.account_number}>
+            <CopyToClipboard text={data?.host?.groom?.account_number}>
               <Button
                 type="text"
                 style={{ padding: 0, margin: 0 }}
                 onClick={() => message.success("계좌번호가 복사되었습니다.")}
               >
-                {data?.groom?.account_number}
+                {data?.host?.groom?.account_number}
               </Button>
             </CopyToClipboard>
           </div>
@@ -151,51 +151,51 @@ export default function CongratulatoryMoney({
         okButtonProps={{ style: { display: "none" } }}
         footer={null}
       >
-        {data?.bride?.parents?.father && (
+        {data?.host?.bride?.parents?.father && (
           <div>
-            <b>부) {data?.bride?.parents?.father?.name}</b>
+            <b>부) {data?.host?.bride?.parents?.father?.name}</b>
             <Divider type="vertical" />
             <CopyToClipboard
-              text={data?.bride?.parents?.father?.account_number}
+              text={data?.host?.bride?.parents?.father?.account_number}
             >
               <Button
                 type="text"
                 style={{ padding: 0, margin: 0 }}
                 onClick={() => message.success("계좌번호가 복사되었습니다.")}
               >
-                {data?.bride?.parents?.father?.account_number}
+                {data?.host?.bride?.parents?.father?.account_number}
               </Button>
             </CopyToClipboard>
           </div>
         )}
-        {data?.bride?.parents?.mother && (
+        {data?.host?.bride?.parents?.mother && (
           <div style={{ marginTop: 24, marginBottom: 24 }}>
-            <b>모) {data?.bride?.parents?.mother?.name}</b>
+            <b>모) {data?.host?.bride?.parents?.mother?.name}</b>
             <Divider type="vertical" />
             <CopyToClipboard
-              text={data?.bride?.parents?.mother?.account_number}
+              text={data?.host?.bride?.parents?.mother?.account_number}
             >
               <Button
                 type="text"
                 style={{ padding: 0, margin: 0 }}
                 onClick={() => message.success("계좌번호가 복사되었습니다.")}
               >
-                {data?.bride?.parents?.mother?.account_number}
+                {data?.host?.bride?.parents?.mother?.account_number}
               </Button>
             </CopyToClipboard>
           </div>
         )}
-        {data?.bride && (
+        {data?.host?.bride && (
           <div>
-            <b>신부 {data?.bride?.name}</b>
+            <b>신부 {data?.host?.bride?.name}</b>
             <Divider type="vertical" />
-            <CopyToClipboard text={data?.bride?.account_number}>
+            <CopyToClipboard text={data?.host?.bride?.account_number}>
               <Button
                 type="text"
                 style={{ padding: 0, margin: 0 }}
                 onClick={() => message.success("계좌번호가 복사되었습니다.")}
               >
-                {data?.bride?.account_number}
+                {data?.host?.bride?.account_number}
               </Button>
             </CopyToClipboard>
           </div>

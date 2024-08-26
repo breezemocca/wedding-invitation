@@ -5,14 +5,14 @@ import dynamic from "next/dynamic";
 import { styled } from "@stitches/react";
 import JsonData from "@/data.json";
 import Script from "next/script";
+//import Account from "@/components/Account";
 
 const Title = dynamic(() => import("@/components/Title"), { ssr: false });
 const Gretting = dynamic(() => import("@/components/Gretting"), { ssr: false });
 const Calendar = dynamic(() => import("@/components/Calendar"), { ssr: false });
 const Gallery = dynamic(() => import("@/components/Gallery"), { ssr: false });
-const Map = dynamic(() => import("@/components/Map"), { ssr: false });
-const MapButtons = dynamic(() => import("@/components/MapButtons"), { ssr: false });
 const Location = dynamic(() => import("@/components/Location"), { ssr: false });
+const Account= dynamic(() => import("@/components/Account"), { ssr: false });
 const CongratulatoryMoney = dynamic(
   () => import("@/components/CongratulatoryMoney"),
   { ssr: false }
@@ -31,7 +31,7 @@ const Footer = styled("footer", {
   opacity: 0.6,
   textAlign: "center",
   width: "100%",
-  height: "100px",
+  height: "50px",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -76,10 +76,8 @@ export default function Home() {
         <Gretting data={JsonData} />
         <Calendar />
         <Gallery />
-        <Map data={JsonData} />
-        <MapButtons data={JsonData} />
         <Location />
-        <CongratulatoryMoney data={JsonData} />
+        <Account />
         <Share data={JsonData} />
         <Footer>Copyright © 2024 Mocca</Footer>
       </main>

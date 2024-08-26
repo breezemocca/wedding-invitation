@@ -14,7 +14,7 @@ const Layout = styled("div", {
 const TitleWrapper = styled("div", {
   position: "absolute",
   width: "100%",
-  top: "10%",
+  top: "17%",
   left: "50%",
   transform: "translate(-50%, -50%)",
   textAlign: "center",
@@ -58,7 +58,7 @@ export default function Title({ data }: TitleProps) {
         <ImageBackground src="./assets/BackgroundImage.jpg" alt="Wedding Background" />
         <TitleWrapper>
           <GroomBride>
-            {data?.groom?.name} 🍀 {data?.bride?.name}
+            {data?.host?.groom?.name} 🍀 {data?.host?.bride?.name}
           </GroomBride>
           <Schedule>
             {data?.date}

@@ -2,6 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { Divider, Button } from "antd";
 import { EnvironmentOutlined, CarOutlined } from '@ant-design/icons';
+import dynamic from "next/dynamic";
+import JsonData from "@/data.json";
+const Map = dynamic(() => import("@/components/Map"), { ssr: false });
+const MapButtons = dynamic(() => import("@/components/MapButtons"), { ssr: false });
 
 const Wrapper = styled.div`
     textAlign: "center";
@@ -74,26 +78,12 @@ const Navigation = () => {
     return (
         <Container>
             <Wrapper>
+                <Divider style={{ paddingTop: 100, marginTop: 0, marginBottom: 32 }} plain>
+                    <Title style={{ fontSize:50 }}>‍👰🏻‍💒🤵🏽</Title>
+                </Divider>
             </Wrapper>
-{/*
-            <Title>내비게이션</Title>
-            <Paragraph>원하시는 앱을 선택하시면 길안내가 시작됩니다.</Paragraph>
-            <ButtonContainer>
-                <ButtonStyled type="primary">
-                    <EnvironmentOutlined />
-                    <IconText>네이버지도</IconText>
-                </ButtonStyled>
-                <ButtonStyled type="primary">
-                    <EnvironmentOutlined />
-                    <IconText>티맵</IconText>
-                </ButtonStyled>
-                <ButtonStyled type="primary">
-                    <EnvironmentOutlined />
-                    <IconText>카카오내비</IconText>
-                </ButtonStyled>
-            </ButtonContainer>
-*/}
-
+            <Map />
+            <MapButtons data={JsonData} />
             <Divider />
 
             <Subtitle>지하철</Subtitle>

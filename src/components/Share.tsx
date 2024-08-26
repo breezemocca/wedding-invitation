@@ -19,7 +19,7 @@ const Wrapper = styled("div", {
 });
 
 const Title = styled("p", {
-  fontSize: "2vh",
+  fontSize: 20,
   fontWeight: "bold",
   opacity: 0.85,
   marginBottom: 0,
@@ -70,7 +70,7 @@ export default function Share({ data }: ShareProps) {
         objectType: "feed",
         container: "#sendKakao",
         content: {
-          title: `${data?.groom?.name}❤${data?.bride?.name} 결혼식에 초대합니다`,
+          title: `${data?.host?.groom?.name}❤${data?.host?.bride?.name} 결혼식에 초대합니다`,
           description: "아래의 '청첩장 열기' 버튼을 눌러 읽어주세요🤵👰",
           imageUrl: data?.kakaotalk?.share_image,
           link: {
@@ -105,6 +105,7 @@ export default function Share({ data }: ShareProps) {
       <Divider plain style={{ marginTop: 0, marginBottom: 32 }}>
         <Title>청첩장 공유하기</Title>
       </Divider>
+{/*
       <KakaoTalkShareButton
         style={{ margin: 8 }}
         icon={<MessageFilled />}
@@ -114,6 +115,7 @@ export default function Share({ data }: ShareProps) {
       >
         카카오톡으로 공유하기
       </KakaoTalkShareButton>
+*/}
       <CopyToClipboard text={data?.kakaotalk?.wedding_invitation_url ?? ""}>
         <LinkShareButton
           style={{ margin: 8 }}

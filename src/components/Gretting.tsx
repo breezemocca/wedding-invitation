@@ -41,11 +41,11 @@ export default function Gretting({ data }: GrettingProps) {
           <Title style={{ fontSize:50 }}>‍👰🏻‍ ‍🤵🏽</Title>
       </Divider>
       <GroomBride style={{ marginTop:30, marginBottom:30 }}>
-        {data?.groom?.parents?.father?.name} ·{" "}
-          {data?.groom?.parents?.mother?.name}<small> 의 장남</small> {data?.groom?.name}
+        {data?.host?.groom?.parents?.father?.name} ·{" "}
+          {data?.host?.groom?.parents?.mother?.name}<small> 의 아들</small> {data?.host?.groom?.name}
         <br />
-        {data?.bride?.parents?.father?.name} ·{" "}
-          {data?.bride?.parents?.mother?.name}<small> 의 장녀</small> {data?.bride?.name}
+        {data?.host?.bride?.parents?.father?.name} ·{" "}
+          {data?.host?.bride?.parents?.mother?.name}<small> 의 딸</small> {data?.host?.bride?.name}
       </GroomBride>
       <Content style={{ marginTop:50 }}>
         둘이 하나가 되어 더<br /> 행복해져 보려 합니다.
