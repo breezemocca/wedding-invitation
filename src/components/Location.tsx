@@ -4,7 +4,10 @@ import { Divider, Button } from "antd";
 import { EnvironmentOutlined, CarOutlined } from '@ant-design/icons';
 import dynamic from "next/dynamic";
 import JsonData from "@/data.json";
-const Map = dynamic(() => import("@/components/Map"), { ssr: false });
+const Map = dynamic(() => import("@/components/Map"), {
+    ssr: false,
+    loading: () => <p>Loading map...</p>,
+});
 const MapButtons = dynamic(() => import("@/components/MapButtons"), { ssr: false });
 
 const Wrapper = styled.div`
