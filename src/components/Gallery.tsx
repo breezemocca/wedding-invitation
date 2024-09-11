@@ -59,11 +59,11 @@ const ArrowButton = styled("button", {
 });
 
 const PrevButton = styled(ArrowButton, {
-    left: "10px",
+    left: "1px",
 });
 
 const NextButton = styled(ArrowButton, {
-    right: "10px",
+    right: "1px",
 });
 
 export default function Gallery() {
